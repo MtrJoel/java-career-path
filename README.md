@@ -13,7 +13,7 @@ con el objetivo de conseguir un trabajo como desarrollador backend.
 
 ## Tecnologías
 
-Java
-Spring Boot
-MySQL
-Git
+1. Java
+2. Spring Boot
+3. MySQL
+4. Git
