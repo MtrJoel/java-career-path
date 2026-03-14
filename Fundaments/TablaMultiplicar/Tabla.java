@@ -10,7 +10,7 @@ public class Tabla {
          */
 
         Scanner scanner = new Scanner(System.in);
-        int limiteTabla = 12;
+        int limiteTabla = 12; // * limite de la tabla
         System.out.print("Ingrese el numero de la tabla : ");
         int tabla = scanner.nextInt(); // * entrada de datos
         for(int i = 1; i <= limiteTabla; i++){
@@ -19,6 +19,5 @@ public class Tabla {
         }
         
         scanner.close();
-
     }
 }
