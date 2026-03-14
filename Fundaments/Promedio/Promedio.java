@@ -19,7 +19,7 @@ public class Promedio {
         threeNotes = scanner.nextDouble();
 
 
-        double total = (oneNotes + secondNotes + threeNotes) / 3;
+        double total = (oneNotes + secondNotes + threeNotes) / 3; // ! Primero suma y despúes divide entre 3
 
         if(total >= 90){
             System.out.format("Excelente su nota es de : %.2f", total);
