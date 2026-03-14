@@ -28,6 +28,6 @@ public class Promedio {
         } else {
             System.out.format("Repitente su nota es de : %.2f", total);
         }
-        
+        scanner.close(); 
     }
 }
