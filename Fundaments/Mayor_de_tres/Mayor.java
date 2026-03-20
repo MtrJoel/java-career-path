@@ -15,12 +15,21 @@ public class Mayor {
         System.out.print("Ingrese un valor para C : ");
         c = scanner.nextInt();
 
-        if(a > b && a > c){
-            System.out.println("El mayor es a : " + a);
+        if(a == b && b == c){
+            System.out.println("Todos los números son iguales : ");
+            System.out.format("A = %d\nB = %d\nC = %d", a, b, c);
+        } else if(a == b && a > c ){
+            System.out.println("A y B son iguales");
+        } else if(a == c && a > b){
+            System.out.println("A y c son iguales");
+        } else if(b == c && b > a){
+            System.out.println("B y C son iguales");
+        } else if(a > b && a > c){
+            System.out.println("El mayor es A");
         } else if(b > a && b > c){
-            System.out.println("El mayor es b : " + b);
+            System.out.println("B es mayor");
         } else {
-            System.out.println("El mayor es c : " + c);
+            System.out.println("C es mayor");
         }
         scanner.close();
     }
