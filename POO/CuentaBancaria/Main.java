@@ -6,7 +6,7 @@ public class Main {
         cb1.cuentaInfo();
 
         cb1.retirar(500.45);
-        cb1.cuentaInfo();
+        cb1.cuentaInfo(); // * Accede a la informacion de la cuenta
         
     }
 }
