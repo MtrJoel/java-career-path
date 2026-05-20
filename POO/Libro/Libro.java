@@ -10,8 +10,6 @@ public class Libro {
 
     // * Getters y setters
 
-   
-
     public String getTitulo(){
         return titulo;
     }
