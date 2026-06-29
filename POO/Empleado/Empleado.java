@@ -3,15 +3,21 @@ package POO.Empleado;
 public class Empleado {
     // * atributos
     private String nombre;
+    private String departamento;
     private double salario;
 
-    public Empleado(String nombre, double salario){
+    public Empleado(String nombre, double salario, String departamento){
         this.nombre = nombre;
         this.salario = salario;
+        this.departamento = departamento;
     }
 
     public String getNombre(){
         return nombre;
+    }
+    
+    public String getDepartamento(){
+        return departamento;
     }
 
     public double getSalario(){
