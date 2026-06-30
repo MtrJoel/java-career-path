@@ -24,7 +24,10 @@ public class Empleado {
         return salario;
     }
 
-    public void aumentarSalario(double porcentaje){
+    public void aumentarSalario(double porcentaje) throws AumentoInvalidoException {
+        if(porcentaje > 0.15){
+            throw new AumentoInvalidoException("El aumento no puede ser mayor al 15%");
+        }
         salario += salario * porcentaje;
     }
 

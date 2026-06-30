@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args){
 
         List<Empleado> empleados = new ArrayList<>();
-        Empleado e1 = new Empleado("Sawuel Monntero", 250, "Desarrollo");
+        Empleado e1 = new Empleado("Sawuel Montero", 250, "Desarrollo");
         Empleado e2 = new Empleado("Joel Montero", 250, "QA");
         Empleado e3 = new Empleado("Saul Montero", 250, "Desarrollo");
         Empleado e4 = new Empleado("Liliana", 250, "QA");
@@ -16,6 +16,12 @@ public class Main {
         empleados.add(e2);
         empleados.add(e3);
         empleados.add(e4);
+
+        try {
+            e1.aumentarSalario(0.16);
+        } catch (AumentoInvalidoException ex) {
+            System.err.println("Error al aumentar salario: " + ex.getMessage());
+        }
 
         for(Empleado emp : empleados){
             if(emp.getDepartamento().equalsIgnoreCase("QA")){
