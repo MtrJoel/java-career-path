@@ -15,6 +15,13 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Error : " + e);
         }
+
+        MetodoPago servicMetodoPago;
+        servicMetodoPago = new tarjetaCredito();
+        servicMetodoPago.procesarPagos(250);
+
+        servicMetodoPago = new pagoEfectivo();
+        servicMetodoPago.procesarPagos(100);
     }
 
 }
