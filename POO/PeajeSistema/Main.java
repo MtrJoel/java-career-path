@@ -11,6 +11,7 @@ public class Main {
 
         try {
             controlOne.procesarPasos("toyota-centra", 25.15);
+            controlOne.procesarPasos("honda-civic", 45);
         } catch (Exception e) {
             System.out.println("Error : " + e);
         }
